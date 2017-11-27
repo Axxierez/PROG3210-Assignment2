@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PROG3210-Assignment2</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enterBtn">Enter</string>
+    <string name="title_activity_register">RegisterActivity</string>
+</resources>
