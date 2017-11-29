@@ -1,12 +1,17 @@
 package com.example.agalka1632.prog3210_assignment2;
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
 
 /**
  * Created by agalka1632 on 11/27/2017.
  */
 
+@Entity
 public class User {
 
-    private int id;
+    @PrimaryKey(autoGenerate = true)
+    long id;
     private String username;
     private String password;
 
@@ -14,19 +19,9 @@ public class User {
 
     }
     // constructor
-    public User(int id, String username, String password){
-        this.setId(id);
+    public User( String username, String password){
         this.setUsername(username);
         this.setPassword(password);
-    }
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getUsername() {
