@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:padding="10dp" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignStart="@+id/textPassword" android:layout_alignLeft="@+id/textPassword" android:layout_above="@+id/textPassword" android:inputType="textEmailAddress" android:ems="10" android:layout_marginBottom="37dp" android:id="@+id/registerUsername"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="textPassword" android:ems="10" android:id="@+id/registerPassword" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignStart="@+id/registerUsername" android:layout_alignLeft="@+id/registerUsername" android:layout_above="@+id/registerUsername" android:id="@+id/usernameText" android:text="@string/username"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignStart="@+id/registerPassword" android:layout_alignLeft="@+id/registerPassword" android:layout_above="@+id/registerPassword" android:id="@+id/textPassword" android:text="@string/password"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="@string/login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/registerPassword"
+        android:layout_alignStart="@+id/registerPassword"
+        android:layout_marginBottom="19dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewRegister"
+        android:text="@string/register"
+        android:layout_alignBaseline="@+id/loginButton"
+        android:layout_alignBottom="@+id/loginButton"
+        android:layout_alignRight="@+id/registerPassword"
+        android:layout_alignEnd="@+id/registerPassword" />
+
+</RelativeLayout>

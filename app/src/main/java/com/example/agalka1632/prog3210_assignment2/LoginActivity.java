@@ -7,11 +7,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.format.Time;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.sql.Time;
 import java.util.Date;
 import java.util.List;
 
@@ -38,9 +38,9 @@ public class LoginActivity extends AppCompatActivity {
 
         List<User> users = database.userDAO().getUser(usernameAnswer);
 
-        if (!users.isEmpty() && passwordAnswer.equals(passwordAnswer)){
-            Time now = new Time();
-            now.setToNow();
+        if (!users.isEmpty() && passwordAnswer.equals(users.get(0).getPassword())){
+
+            Date now = new Date();
 
             User user = users.get(0);
 

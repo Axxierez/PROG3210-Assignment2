@@ -20,7 +20,7 @@ public interface ToastMessageDAO {
     void addToast(ToastMessage toast);
 
     @Query("SELECT * FROM toast_message WHERE userId=:userId")
-    List<ToastMessage> findToastForUser(int userId);
+    List<ToastMessage> findToastForUser(long userId);
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
     void updateToast(ToastMessage toast);

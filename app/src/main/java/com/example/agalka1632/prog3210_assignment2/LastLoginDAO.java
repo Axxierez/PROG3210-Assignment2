@@ -19,7 +19,7 @@ public interface LastLoginDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void addLastLogin(LastLogin login);
 
-    @Query("SELECT * FROM last_login WHERE userId=:userId")
+    @Query("SELECT  * FROM last_login WHERE userId=:userId")
     List<LastLogin> findLastLogin(long userId);
 
 }

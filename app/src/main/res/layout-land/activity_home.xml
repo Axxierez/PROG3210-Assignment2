@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:onClick="EditToast"
         android:text="@string/editToast"
-        android:layout_marginBottom="183dp"
+        android:layout_marginBottom="110dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -16,9 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:text="Last Login: Never!"
         android:layout_above="@+id/btnEditToast"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="75dp"
-        android:text="Last Login: Never!" />
+        android:layout_marginBottom="61dp" />
 
 </RelativeLayout>

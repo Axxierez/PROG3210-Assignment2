@@ -26,10 +26,18 @@ public class ToastMessage {
 
     public long userId;
 
-    String message;
+    private String message;
 
     public ToastMessage(long userId, String message) {
         this.userId = userId;
+        this.setMessage(message);
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
         this.message = message;
     }
 }
