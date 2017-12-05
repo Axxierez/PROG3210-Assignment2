@@ -40,12 +40,9 @@ public class LoginActivity extends AppCompatActivity {
 
         if (!users.isEmpty() && passwordAnswer.equals(users.get(0).getPassword())){
 
-            Date now = new Date();
-
             User user = users.get(0);
-
             //Creates a new entry in the last_login table
-            database.lastLoginDAO().addLastLogin(new LastLogin(user.id,now.toString()));
+            database.lastLoginDAO().addLastLogin(new LastLogin(user.id,new Date().toString()));
             Intent intent = new Intent(this, HomeActivity.class);
             intent.putExtra("userLoggedIn", usernameAnswer);
             startActivity(intent);
