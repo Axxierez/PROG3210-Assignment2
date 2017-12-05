@@ -36,6 +36,7 @@ public class HomeActivity extends AppCompatActivity {
 
         if (existingToast!=null)
             toastMessage=existingToast.getMessage();
+        //Creates a toast with the message saved in the database
         Toast.makeText(getApplicationContext(),toastMessage, Toast.LENGTH_LONG).show();
 
 

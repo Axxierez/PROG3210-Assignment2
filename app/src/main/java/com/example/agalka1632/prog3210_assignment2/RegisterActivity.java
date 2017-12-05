@@ -46,6 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
         }else{
 
             List<User> users = database.userDAO().getUser(usernameAnswer);
+            //creates a new account if there is no user with the username provided
             if(users.isEmpty()){
                 database.userDAO().addUser(new User( usernameAnswer, passwordAnswer));
                 Intent intent = new Intent(this, HomeActivity.class);
